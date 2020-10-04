@@ -1,8 +1,8 @@
 CC=gcc  #compiler
-TARGET=main #target file name
- 
+TARGET=main.o #target file name
+
 all:
-    $(CC) main.c -o $(TARGET)
- 
+	$(CC) main.c -o $(TARGET)
+
 clean:
-    rm $(TARGET)
+	rm $(TARGET)
