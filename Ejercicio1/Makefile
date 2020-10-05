@@ -1,8 +1,12 @@
-CC=gcc  #compiler
-TARGET=main.o #target file name
+OBJS	= main.o
+SOURCE  = main.c
+OUT = main.o
+CC  = gcc
+CFLAGS  = -pthread
 
 all:
-	$(CC) main.c -o $(TARGET)
+	$(CC) $(CFLAGS) $(SOURCE) -o $(OUT)
+
 
 clean:
-	rm $(TARGET)
+	rm $(OUT)
